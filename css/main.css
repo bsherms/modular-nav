@@ -10,6 +10,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  font-family: sans-serif;
 }
 
 *, *::before, *::after {
@@ -20,10 +21,45 @@ body {
   margin: 0;
 }
 
-a {
-  color: #0074d9;
+header {
+  background-color: #e2e2e2;
 }
 
-a:hover {
-  color:
+nav li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav a {
+  color: #0074d9;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fff;
+  background-color: #0074d9;
+}
+
+@media only screen and (min-width: 20em) {
+
+  .logo {
+    text-align: center;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .logo {
+    text-align: left;
+  }
+
+  nav {
+    text-align: right;
+  }
+
 }
